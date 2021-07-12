@@ -1,0 +1,55 @@
+body {
+  background-color: rgb(129, 108, 91);
+}
+
+button {
+  padding: 10px;
+  margin: 15px;
+  background-color: #897853;
+}
+.gameName {
+  font-family: cursive;
+
+}
+.tableGame {
+  display: table;
+  margin: auto;
+  padding: 20px;
+}
+
+.tableRow {
+  display: table-row;
+}
+
+.tableCell {
+  width: 35px;
+  height: 35px;
+  display: table-cell;
+  border: 1px solid white;
+  overflow: hidden;
+  background-color: rgb(128, 128, 128);
+  color: rgb(128, 128, 128);
+  text-align: center;
+}
+
+.auxClass {
+  width: 35px;
+  height: 35px;
+  display: table-cell;
+  border: 1px solid white;
+  overflow: hidden;
+  background-color: red;
+  color: red;
+  text-align: center;
+}
+
+#numberMines {
+  display: none ;
+  background-color: #346751;
+  color : yellow ;
+  font-size: 50px;
+  text-align: center ;
+  width: 80px;
+  height: 80px;
+  border: 2px solid black ;
+}
