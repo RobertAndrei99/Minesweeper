@@ -12,19 +12,35 @@
 <body>
   <h1 class="gameName">Minesweeper modern</h1>
   <button id="btnGameStart" type="button" onclick="return startGame()">Start game </button>
-  <div id="tableBoard" class="tableGame">
-    <div id="tableRow0" class="tableRow"></div>
-    <div id="tableRow1" class="tableRow"></div>
-    <div id="tableRow2" class="tableRow"></div>
-    <div id="tableRow3" class="tableRow"></div>
-    <div id="tableRow4" class="tableRow"></div>
-    <div id="tableRow5" class="tableRow"></div>
-    <div id="tableRow6" class="tableRow"></div>
-    <div id="tableRow7" class="tableRow"></div>
-    <div id="tableRow8" class="tableRow"></div>
-    <div id="tableRow9" class="tableRow"></div>
-  </div>
-  <div id="numberMines"></div>
+
+    <div class="main">
+      <div id="numberMines">Mines on game board :</div>
+        <div id="tableBoard" class="tableGame">
+          <div id="tableRow0" class="tableRow"></div>
+          <div id="tableRow1" class="tableRow"></div>
+          <div id="tableRow2" class="tableRow"></div>
+          <div id="tableRow3" class="tableRow"></div>
+          <div id="tableRow4" class="tableRow"></div>
+          <div id="tableRow5" class="tableRow"></div>
+          <div id="tableRow6" class="tableRow"></div>
+          <div id="tableRow7" class="tableRow"></div>
+          <div id="tableRow8" class="tableRow"></div>
+          <div id="tableRow9" class="tableRow"></div>
+        </div>
+        <div>
+          <h1>How to play</h4>
+          <p>
+          <strong>1 -</strong>Understand the principles behind Minesweeper. Each Minesweeper game starts out with a grid of unmarked squares. After clicking one of these squares,
+           some of the squares will disappear, some will remain blank, and some will have numbers on them. It's your job to use the numbers to figure out which of
+           the blank squares have mines and which are safe to click <br>
+          <strong>2 -</strong>Use the mouse's left and right buttons. The mouse is the only tool that you'll need to play Minesweeper. The left mouse button is used
+          to click squares that don't contain mines, while the right mouse button is used to flag squares that contain mines. <br>
+          <strong>3 -</strong>Know what the numbers mean. A number on a square refers to the number of mines that are currently touching that square. For example, if there are two squares
+          touching each other and one of the squares has "1" on it, you know that the square next to it has a mine beneath it.
+         </p>
+
+        </div>
+    </div>
 </body>
 <script src="script.js"></script>
 

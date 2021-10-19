@@ -1,5 +1,6 @@
 let gameElements = [];
 let nrBombs = 0;
+let minesTxt = "Mines on game board : "
 for (let i = 0; i < 80; i++) {
   gameElements.push(nrBombs);
 }
@@ -61,6 +62,8 @@ function startGame() {
         ++column;
     }
   }
+  let tableBoard = document.getElementById('tableBoard').offsetWidth ;
+  document.getElementById('numberMines').style.width = tableBoard - 52 + "px";
   $('#numberMines').append(`
  ` + numberOfMines + `
   `)
@@ -106,13 +109,13 @@ function choosenCell(cellId, element) {
       if (element.className == "tableCell") {
         element.className = "auxClass";
         --numberOfMines;
-        document.getElementById('numberMines').innerText = numberOfMines;
+        document.getElementById('numberMines').innerText = minesTxt + numberOfMines;
       }
     } else {
       if (element.className == "auxClass") {
         element.className = "tableCell";
         ++numberOfMines;
-        document.getElementById('numberMines').innerText = numberOfMines;
+        document.getElementById('numberMines').innerText = minesTxt + numberOfMines;
       }
     }
   }

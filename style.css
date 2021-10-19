@@ -8,19 +8,31 @@ button {
   background-color: #897853;
 }
 .gameName {
+  font-size: 60px;
+  text-align: center;
   font-family: cursive;
 
 }
 .tableGame {
-  display: table;
-  margin: auto;
-  padding: 20px;
+  padding-right: 50px;
+  user-select: none;
+  display: inline-block;
+  float: left;
 }
-
+.main {
+  text-align: center;
+}
 .tableRow {
   display: table-row;
+  width: 385px;
 }
-
+strong {
+  font-size: 40px;
+}
+p {
+  font-size: 20px;
+  word-wrap: break-word;
+}
 .tableCell {
   width: 35px;
   height: 35px;
@@ -31,7 +43,9 @@ button {
   color: rgb(128, 128, 128);
   text-align: center;
 }
-
+.second {
+  display: inline;
+}
 .auxClass {
   width: 35px;
   height: 35px;
@@ -44,12 +58,12 @@ button {
 }
 
 #numberMines {
-  display: none ;
+  user-select: none;
+  text-align: center;
+  display: none;
   background-color: #346751;
-  color : yellow ;
-  font-size: 50px;
-  text-align: center ;
-  width: 80px;
-  height: 80px;
-  border: 2px solid black ;
+  color: yellow;
+  font-size: 30px;
+  height: 50px;
+  border: 1px solid black;
 }
